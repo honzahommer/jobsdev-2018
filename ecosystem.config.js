@@ -12,7 +12,7 @@ module.exports = {
       host: 'johnson.hommer.cz',
       ref: 'origin/master',
       repo: 'git@github.com:honzahommer/jobsdev-2018.git',
-      path: '/var/app/jobsdev/production',
+      path: '/vol/app/jobsdev/production',
       'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env production'
     },
     development: {
@@ -20,7 +20,7 @@ module.exports = {
       host: 'johnson.hommer.cz',
       ref: 'origin/master',
       repo: 'git@github.com:honzahommer/jobsdev-2018.git',
-      path: '/var/app/jobsdev/development',
+      path: '/vol/app/jobsdev/development',
       'post-deploy': 'npm install && pm2 reload ecosystem.config.js --env development',
       env: {
         NODE_ENV: 'development'
